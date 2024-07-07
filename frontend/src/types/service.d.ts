@@ -14,4 +14,4 @@ type Pokemon = {
 
 type RequestInit = {} | Record<string, any>
 
-export type getImageUrl = (id: number) => string
+export type GetPokemon = (url: string) => Promise<any>
