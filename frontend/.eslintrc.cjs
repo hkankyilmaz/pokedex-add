@@ -11,5 +11,13 @@ module.exports = {
   ],
   parserOptions: {
     ecmaVersion: 'latest'
-  }
+  },
+  plugins: [
+    'pug',
+  ],
+  rules: {
+    'no-unused-vars': 'warn',
+    'pug/no-unused-vars': 'error',
+  },
+
 }
