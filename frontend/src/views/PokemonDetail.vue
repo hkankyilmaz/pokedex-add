@@ -19,10 +19,10 @@ onMounted(async () => {
 
 
 div(class="flex flex-col justify-center items-center p-10 h-[calc(100vh-130px)]")
-  div(class="bg-gray-200 p-5 w-[400px] h-min-[500px] rounded-lg flex flex-col items-center hover:bg-gray-300 transition duration-300 ease-in-out")
+  div(class="bg-gray-200 p-5 w-full md:w-[400px] h-min-[500px] rounded-lg flex flex-col items-center hover:bg-gray-300 transition duration-300 ease-in-out")
     div(class="flex flex-col items-center")
       div(class="flex justify-between w-full")
-        img(:src="imageUrl" alt="Vue logo" width="200" height="50")
+        img(:src="imageUrl" alt="Vue logo" width="200" height="50" class="m-auto")
         
       div(class="flex flex-col")
         p
@@ -40,7 +40,7 @@ div(class="flex flex-col justify-center items-center p-10 h-[calc(100vh-130px)]"
         p 
           span(class="font-bold") Types:
           span(v-for="type in pokemon?.types") {{ _.capitalize(type.type.name)  }}
-  RouterLink(to="/" class="mt-10 p-3 bg-orange-400 text-white rounded-lg hover:bg-orange-500 cursor-pointer") Go Home
+  RouterLink(to="/" class="mt-10 p-3 bg-black text-white rounded-lg hover:bg-orange-500 cursor-pointer") Go Home
          
   
 </template>

@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import logo from './assets/pngegg.png'
+import { useQueryProvider } from 'vue-query'
 import './index.css'
+
+useQueryProvider()
 </script>
 
 <template lang="pug">
@@ -14,7 +17,7 @@ header(class="bg-gray-800 text-white  flex justify-between items-center px-10")
         RouterLink(to="/login") Login
 
 RouterView
-footer(class="bg-gray-800 text-white text-center p-5")
+footer(class="bg-gray-800 text-white flex justify-center items-center p-5")
   p(class="text-sm") © 2024 Pokemon  - Hakan KARAYILMAZ
 
 </template>
