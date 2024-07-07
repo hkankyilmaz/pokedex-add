@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import logo from './assets/pngegg.png'
-import './index.css'
+import { RouterLink, RouterView } from "vue-router";
+import logo from "./assets/pngegg.png";
+import "./index.css";
 </script>
 
 <template lang="pug">
