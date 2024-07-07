@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-import { getImageUrl } from '../utils/utils'
+import { getImageUrl } from '@/utils/utils'
 import _ from 'lodash'
 
 const { name, url } = defineProps({
@@ -9,16 +9,18 @@ const { name, url } = defineProps({
 })
 
 const imageUrl = ref('')
+const detailsUrl = ref('')
 
 onMounted(() => {
   const pokemonIndex = parseInt((url as string)?.split('/')?.[(url as string).split('/').length - 2] ?? '0')
+  detailsUrl.value = `/pokemon/${pokemonIndex}`
   imageUrl.value = getImageUrl(pokemonIndex)
 })
 </script>
 
 <template lang="pug">
 
-div(class="bg-gray-200 p-5 rounded-lg flex flex-col items-center cursor-pointer hover:bg-gray-300 transition duration-300 ease-in-out")
+RouterLink(:to="detailsUrl" class="bg-gray-200 p-5 rounded-lg flex flex-col items-center cursor-pointer hover:bg-gray-300 transition duration-300 ease-in-out")
   img(:src="imageUrl" alt="Vue logo" width="70" height="50")
   p(class="text-black") {{ _.capitalize(name) }}
 
