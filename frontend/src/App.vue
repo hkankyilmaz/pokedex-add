@@ -15,6 +15,6 @@ header(class="bg-gray-800 text-white  flex justify-between items-center px-10")
 
 RouterView
 footer(class="bg-gray-800 text-white text-center p-5")
-  p(class="text-sm") © 2024 Pokemon - All rights reserved - Hakan KARAYILMAZ
+  p(class="text-sm") © 2024 Pokemon  - Hakan KARAYILMAZ
 
 </template>
