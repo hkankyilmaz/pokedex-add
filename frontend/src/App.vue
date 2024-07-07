@@ -1,10 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import logo from './assets/pngegg.png'
-import { useQueryProvider } from 'vue-query'
 import './index.css'
-
-useQueryProvider()
 </script>
 
 <template lang="pug">
