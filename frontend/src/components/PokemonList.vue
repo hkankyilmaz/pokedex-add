@@ -4,7 +4,7 @@ import PokemonCard from './PokemonCard.vue'
 import { computed, onMounted, ref } from 'vue'
 import _ from 'lodash'
 import { getPokemons } from '@/service/service'
-import { useQuery } from 'vue-query'
+//import { useQuery } from 'vue-query'
 
 const search = ref('')
 const pokemonList = ref<Record<string, any>[]>([])
