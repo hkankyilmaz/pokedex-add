@@ -1,39 +1,16 @@
-# frontend
 
-This template should help get you started developing with Vue 3 in Vite.
+# IT537 - Assignment 2
 
-## Recommended IDE Setup
+You are responsible for creating pokedex app by using vue.js.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+- https://pokeapi.co is the api-source.
+- You can check the similar project -> https://github.com/skydoves/Pokedex
+- There should be two pages.
+- Home page is responsible for listing all pokemons.
+- Details page, where it is routed from Home, is responsible for details of the pokemon.
+- You are free to use either plain css or tailwind.
+- Responsive design is necessary.
+- You can use any color palette you want.
+- Due date is 21.07.2024, 11.59 pm.
+- I will share my solution after the due date.
+- Your branch name must be following format IT537_<YOUR_SCHOOL_ID> eg. IT537_27404
